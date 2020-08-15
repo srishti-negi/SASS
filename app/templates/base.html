@@ -53,8 +53,12 @@
                                             <ul id="navigation">
                                                
                                                 <li><a href="{{url_for('index')}}">home</a></li>
-                                                <li><a href="{{url_for('login')}}">login</a></li>
-                                                <li><a href="{{url_for('logout')}}">logout</a></li>
+                                                {% if current_user.is_authenticated %}
+                                                <li><a href="{{url_for('logout')}}">Logout</a></li>
+                                                {% else %}
+                                                <li><a href="{{url_for('login')}}">Login</a></li>
+                                                {% endif %}
+                                                
                                                 <li><a href="{{url_for('medical')}}">Colleges</a></li>
                                                 <li> &nbsp&nbsp <a href="/blog/">Blog</a></li>
                                                 <li><a href="{{url_for('event')}}">Event</a></li>
