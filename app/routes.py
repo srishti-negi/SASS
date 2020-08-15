@@ -10,6 +10,10 @@ from werkzeug.urls import url_parse
 def index():
     return render_template('index.html')
 
+@app.route('/event')
+def event():
+    return render_template('event.html')
+
 
 @app.route('/college')
 def college():
