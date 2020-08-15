@@ -1,7 +1,8 @@
-from app import db, loginmanager
+from app import db, loginmanager, blog_engine
 from werkzeug.security import generate_password_hash, check_password_hash
 
 @loginmanager.user_loader
+@blog_engine.user_loader
 def user_loader(id):
     return User.query.get(int(id))
 
