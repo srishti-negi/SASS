@@ -19,7 +19,7 @@ College Explorer can be expanded to include colleges not just in Indonesia, but 
 
 1. Clone this repository.
 ```
-	git clone 
+	git clone https://github.com/srishti-negi/SASS.git
 ```
 2. Install all the dependencies.
 ```
