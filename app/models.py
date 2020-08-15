@@ -1,4 +1,4 @@
-from app import db, loginmanager, blog_engine
+from app import db, loginmanager
 from werkzeug.security import generate_password_hash, check_password_hash
 
 @loginmanager.user_loader
