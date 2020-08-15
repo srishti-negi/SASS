@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- bradcam_area_start  -->
+    <div class="bradcam_area breadcam_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>Colleges to apply</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bradcam_area_end  -->
+
+    <!-- popular_program_area_start  -->
+    <div class="popular_program_area section__padding program__page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center">
+                        <h3>Medical colleges in Indonesia</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="custom_tabs text-center">
+                        <div class="nav" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link active" href="{{url_for('medical')}}"  aria-controls="nav-home" aria-selected="true">Medical                          </a>
+                            <a class="nav-item nav-link"  href="{{url_for('engineering')}}" role="tab" aria-controls="nav-profile" aria-selected="false">Engineering </a>
+                            <a class="nav-item nav-link" href="{{url_for('business')}}" role="tab" aria-controls="nav-contact" aria-selected="false">Business</a>
+                            <a class="nav-item nav-link"  href="{{url_for('law')}}" role="tab" aria-controls="nav-contact" aria-selected="false">Law</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/1.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Medical</span>
+                                    <h4>Universitas Sumatera Utara (USU)</h4>
+                                    <p>location: Medan in North Sumatra, Indonesia.</p>
+                                    <p>fees: 7500 USD</p>
+                                    <p>admission: SNMPTN/ SBMPTN</p>
+                                    <a href="https://www.usu.ac.id/en" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/2.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Medical</span>
+                                    <h4>Universitas Udayana (UNUD)</h4>
+                                    <p>location: Denpasar, Bali, Indonesia.</p>
+                                    <p>fees: 5000USD</p>
+                                    <p>admission: SNMPTN/ SBMPTN</p>
+
+                                    <a href="https://www.unud.ac.id/" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/3.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Medical</span>
+                                    <h4>Universitas Gadjah Mada (UGM)</h4>
+                                    <p>location: Yogyakarta, Special Region of Yogyakarta, Indonesia</p>
+                                    <p>fees: 5000 USD</p>
+                                    <p>admission: SNMPTN/ SBMPTN</p>
+
+                                    <a href="https://www.ugm.ac.id/en" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/1.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Medical</span>
+                                    <h4>Universitas Airlangga (UNAIR)</h4>
+                                    <p>location: Jawa, Timur</p>
+                                    <p>fees: 5000 USD</p>
+                                    <p>admission: SNMPTN/ SBMPTN</p>
+
+                                    <a href="https://www.unair.ac.id/" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/2.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Medical</span>
+                                    <h4>Universitas Brawijaya (UNIBRAW)</h4>
+                                    <p>location: Jl. Veteran, Ketawanggede, Kec. Lowokwaru, Kota Malang, Jawa Timur</p>
+                                    <p>fees: 17,720 USD</p>
+                                    <p>admission: SNMPTN/ SBMPTN</p>
+
+                                    <a href="https://ub.ac.id/en/" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/3.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Medical</span>
+                                    <h4>Universitas Andalas (UNAND)</h4>
+                                    <p>location: Jawa, Timur</p>
+                                    <p>fees: 5000 USD</p>
+                                    <p>admission: SNMPTN/ SBMPTN</p>
+
+                                    <a href="https://unand.ac.id/" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!-- popular_program_area_end -->
+{% endblock %}

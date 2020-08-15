@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <!-- bradcam_area_start  -->
+    <div class="bradcam_area breadcam_bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="bradcam_text">
+                        <h3>Colleges to apply</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- bradcam_area_end  -->
+
+    <!-- popular_program_area_start  -->
+    <div class="popular_program_area section__padding program__page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title text-center">
+                        <h3>Colleges in Indonesia</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="custom_tabs text-center">
+                        <div class="nav" id="nav-tab" role="tablist">
+                            <a class="nav-item nav-link" href="{{url_for('medical')}}"  aria-controls="nav-home" aria-selected="true">Medical                          </a>
+                            <a class="nav-item nav-link"  href="{{url_for('engineering')}}" role="tab" aria-controls="nav-profile" aria-selected="false">Engineering </a>
+                            <a class="nav-item nav-link active" href="{{url_for('business')}}" role="tab" aria-controls="nav-contact" aria-selected="false">Business</a>
+                            <a class="nav-item nav-link"  href="{{url_for('law')}}" role="tab" aria-controls="nav-contact" aria-selected="false">Law</a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/1.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Business</span>
+                                    <h4>University Of Indonesia Faculty Of Economics And Business</h4>
+                                    <p>Location: Java</p>
+                                    <p>Fees: 800-1000 USD</p>
+                                    <p>Eligibility and admission: Undergrad program</p>
+                                    <a href="http://www.feb.ui.ac.id/" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/2.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Business</span>
+                                    <h4>IPMI International Business School</h4>
+                                            <p>Location: Jakarta</p>
+                                            <p>Fees: IDR 250,000,000</p>  
+                                            <p>Eligibility and admission: BBA</p>                                
+                                            <a href="https://ipmi.ac.id" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/3.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Business</span>
+                                    <h4>School Of Business And Management - Institut Teknologi Bandung
+                                    </h4>
+                                    <p>Location: Bandung</p>
+                                    <p>Fees: IDR 40,000,000</p>  
+                                    <p>Eligibility and admission: Bachelor of management</p>                                
+                                    <a href="https://www.itb.ac.id/school-of-business-and-management" class="boxed-btn5">Apply NOw</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/1.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Business</span>
+                                    <h4>Gadjah Mada University - Faculty Of Economics And Business
+                                    </h4>
+                                    <p>Location: Jakarta</p>
+                                            <p>Fees: RP 35,000,000</p>  
+                                            <p>Eligibility and admission: undergrad</p>                                
+                                            <a href="http://www.feb.ugm.ac.id/" class="boxed-btn5">Apply NOw</a>
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/2.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Business</span>
+                                    <h4>Universitas Diponegoro Faculty Of Economics And Business
+                                    </h4>
+                                    <p>Location: Semarang</p>
+                                            <p>Fees: 1000 USD</p>  
+                                            <p>Eligibility and admission: undergrad</p>                                
+                                            <a href="https://www.undip.ac.id/language/en/faculty/faculty-of-economics-and-business" class="boxed-btn5">Apply NOw</a>
+                               
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single__program">
+                                <div class="program_thumb">
+                                    <img src="static/img/program/3.png" alt="">
+                                </div>
+                                <div class="program__content">
+                                    <span>Business</span>
+                                    <h4>Airlangga University - Faculty Of Economics And Business</h4>
+                                    <p>Location: Surabaya</p>
+                                            <p>Fees: 5000USD</p>  
+                                            <p>Eligibility and admission: bachelor</p>                                
+                                            <a href="http://s1.manajemen.feb.unair.ac.id" class="boxed-btn5">Apply NOw</a>
+                               
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- popular_program_area_end -->
+{% endblock %}

@@ -10,6 +10,28 @@ from werkzeug.urls import url_parse
 def index():
     return render_template('index.html')
 
+
+@app.route('/college')
+def college():
+    return render_template('college.html')
+
+@app.route('/medical')
+def medical():
+    return render_template('medical.html')
+
+@app.route('/law')
+def law():
+    return render_template('law.html')
+
+@app.route('/business')
+def business():
+    return render_template('business.html')
+
+@app.route('/engineering')
+def engineering():
+    return render_template('engineering.html')
+
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if current_user.is_authenticated:
