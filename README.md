@@ -1,5 +1,5 @@
 # College Explorer
-College Explorer is a portal for high school graduates which aims to cater to all their needs - be it looking for a college, finding productive skills to learn over the break, or speaking to prospective seniors about their dream colleges. 
+College Explorer is a portal for Indonesian high school graduates which aims to cater to all their needs - be it looking for a college, finding productive skills to learn over the break, or speaking to prospective seniors about their dream colleges. 
 We connect these students with campus ambassadors from colleges across Indonesia. These campus ambassadors provide complete information regarding their colleges and clear any doubts students may have.
 
 ## Motivation
