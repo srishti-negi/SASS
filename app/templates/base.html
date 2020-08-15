@@ -53,8 +53,12 @@
                                             <ul id="navigation">
                                                
                                                 <li><a href="{{url_for('index')}}">home</a></li>
-                                                <li><a href="{{url_for('login')}}">login</a></li>
-                                                <li><a href="{{url_for('logout')}}">logout</a></li>
+                                                {% if current_user.is_authenticated %}
+                                                <li><a href="{{url_for('logout')}}">Logout</a></li>
+                                                {% else %}
+                                                <li><a href="{{url_for('login')}}">Login</a></li>
+                                                {% endif %}
+                                                
                                                 <li><a href="{{url_for('medical')}}">Colleges</a></li>
                                                 <li> &nbsp&nbsp <a href="/blog/">Blog</a></li>
                                                 <li><a href="{{url_for('event')}}">Event</a></li>
@@ -65,7 +69,7 @@
                                     </div>
                                     <div class="Appointment">
                                         <div class="book_btn d-none d-lg-block">
-                                            <a data-scroll-nav='1' href="https://docs.google.com/forms/d/e/1FAIpQLSfnffho9633kTmFHnhoM8ZKd8wFm6Mwk9otcJjXB6IcApdEnA/viewform?usp=sf_link">Be A Campus Ambassador</a>
+                                            <a  href="https://docs.google.com/forms/d/e/1FAIpQLSfnffho9633kTmFHnhoM8ZKd8wFm6Mwk9otcJjXB6IcApdEnA/viewform?usp=sf_link">Be A Campus Ambassador</a>
                                         </div>
                                     </div>
                                 </div>
