@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang = "zxx">
+    <head>
+        {% if title %}
+        <title> Our APP -- {{ title }} </title>
+        {% else %}
+        <title> Our APP </title>
+        {% endif %}
+    </head>
+    <body>
+        <h1> APP </h1>
+        <nav>
+            <a href="{{url_for('index')}}">home</a>
+            <a href="{{url_for('login')}}">login</a>
+            <a href="{{url_for('register')}}">Sign Up</a>
+            <a href="{{url_for('logout')}}">logout</a>
+        </nav>
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        <ul>
+            {% for msg in messages %}
+            <li> {{msg}} </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        {% block content %} {% endblock %}
+    </body>
+</html>
